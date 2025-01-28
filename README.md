@@ -1,1 +1,1 @@
-# Cal-JavaScrip
+# Cal-JavaScript
