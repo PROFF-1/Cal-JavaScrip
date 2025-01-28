@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>dom calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+  <body>
+  
+    <p>
+
+      <p class="js-calculation"></p>
+
+      <button onclick = "updateCalculation(1)"
+        class="number-key"> 
+        1
+      </button>
+
+      <button onclick = "updateCalculation(2);"
+        class="number-key">
+        2
+      </button>
+
+      <button onclick = "updateCalculation(3);"
+       class="number-key">
+       3
+      </button>
+
+      <button onclick = "updateCalculation('+');" 
+        class="sign-key">
+        +
+      </button>
+
+    </p>
+
+    <p>
+
+      <button  onclick = "updateCalculation(4);"
+        class="number-key">
+        4
+      </button>
+
+      <button onclick = "updateCalculation(5);"
+        class="number-key">
+        5
+      </button>
+
+      <button onclick = "updateCalculation(6);"
+        class="number-key">
+        6
+      </button>
+
+      <button onclick = "updateCalculation('-');"
+        class="sign-key">
+        -
+      </button>
+
+    </p>
+    <p>
+
+  <button  onclick = "
+         updateCalculation(7);
+         "
+     class="number-key"
+     >7</button>
+
+  <button onclick = "
+      updateCalculation(8);
+      "
+  class="number-key"
+  >8</button>
+
+  <button onclick = "
+      updateCalculation(9);
+      "
+  class="number-key"
+  >9</button>
+  
+  <button onclick = "
+      updateCalculation('*');
+      "
+  class="sign-key"
+  >*</button>
+  
+    </p>
+
+    <p>
+
+      <button  onclick = "updateCalculation(0);"
+        class="number-key">
+        0
+      </button>
+
+
+      <button onclick = "updateCalculation('.');"      
+        class="number-key">
+        .
+      </button>
+
+      <button onclick = "updateCalculation('=');
+        localStorage.setItem('calculation',calculation);" 
+        class="number-key">
+        =
+      </button>
+
+    
+      <button onclick = "updateCalculation('/')"
+        class="sign-key">
+        /
+       </button>
+      
+    </p>
+
+      <button onclick = "updateCalculation('cleared')
+        localStorage.setItem('calculation',calculation);"
+        class="number-key clear"> 
+        Clear
+      </button>
+
+   
+    <script src="calculator.js"></script>
+  </body>
+</html>
